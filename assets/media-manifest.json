@@ -1,0 +1,63 @@
+{
+  "source_video_duration_seconds": 631.133333,
+  "source_video_resolution": [
+    960,
+    544
+  ],
+  "source_video_reference": "微信视频_20261119204057.mp4",
+  "remote_full_recording_url": "https://drive.google.com/file/d/1SNV6oNJskdxrOYUmpqKmk10OKzdtOEuN/view?usp=drivesdk",
+  "assets": [
+    {
+      "file": "excerpt.mp4",
+      "type": "performance_excerpt",
+      "source_start_seconds": 180,
+      "duration_seconds": 75,
+      "audio": true
+    },
+    {
+      "file": "hero-loop.mp4",
+      "type": "decorative_motion_excerpt",
+      "source_start_seconds": 180,
+      "duration_seconds": 8,
+      "audio": false
+    },
+    {
+      "file": "performance-poster.jpg",
+      "type": "video_still",
+      "source_time_seconds": 180
+    },
+    {
+      "file": "quartet.jpg",
+      "type": "supplied_photo",
+      "source_reference": "微信图片_20261119203731.jpg"
+    },
+    {
+      "file": "voice-strings.jpg",
+      "type": "supplied_photo",
+      "source_reference": "未命名文件夹/微信图片_20261119211221_3101_3.jpg",
+      "width": 1920,
+      "height": 1280,
+      "processing": "Byte-for-byte copy; original framing preserved",
+      "content_note": "Singer, conductor, and string ensemble"
+    },
+    {
+      "file": "curtain-call.jpg",
+      "type": "supplied_photo",
+      "source_reference": "未命名文件夹/微信图片_20261119211222_3103_3.jpg",
+      "width": 1920,
+      "height": 1280,
+      "processing": "Byte-for-byte copy; original framing preserved",
+      "content_note": "Ensemble standing on stage at curtain call"
+    },
+    {
+      "file": "cello-session.jpg",
+      "type": "supplied_photo",
+      "source_reference": "未命名文件夹/微信图片_20261119211228_3107_3.jpg",
+      "width": 1280,
+      "height": 2781,
+      "processing": "Byte-for-byte copy; original framing preserved",
+      "content_note": "Portrait screenshot of cello playing with original social-video interface retained"
+    }
+  ],
+  "editorial_note": "The hero photo and performance excerpt show a string quartet. The gallery uses three distinct supplied views: a cello close-up, a voice-and-strings performance, and a curtain call. The cello screenshot is framed with CSS to hide interface elements; its stored file is unchanged. Similar quartet photos and repetitive extracted stills are excluded. No synthetic performance imagery is included."
+}

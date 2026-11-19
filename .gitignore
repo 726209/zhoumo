@@ -1,0 +1,11 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+node_modules/
+.wrangler/
+site-dist/
+__pycache__/
+*.zip
+*.tar.gz
+*.log

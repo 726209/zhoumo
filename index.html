@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111312">
+  <meta name="description" content="ZhouMo — Cello. A selection of live chamber performances and moments on stage.">
+  <meta property="og:title" content="ZhouMo — Cello">
+  <meta property="og:description" content="A space for sound. Live performances and moments on stage.">
+  <title>ZhouMo — Cello</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23111312'/%3E%3Ctext x='32' y='44' text-anchor='middle' fill='%23f2f2ed' font-size='42' font-family='Georgia'%3Ez%3C/text%3E%3C/svg%3E">
+  <style>
+    :root{--ink:#202621;--paper:#f5f5f1;--muted:#696e68;--line:#d7dad2;--accent:#773b32;--serif:'Bodoni 72','Iowan Old Style','Palatino Linotype',Georgia,serif;--sans:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:92px}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}body.locked{overflow:hidden}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit}button,a{touch-action:manipulation}a{color:inherit;text-decoration:none}button{cursor:pointer}button:disabled{cursor:default}img,video{display:block;width:100%}button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid #a95341;outline-offset:6px}::selection{background:#b4c3b1;color:#142016}.skip{position:fixed;top:-80px;left:20px;z-index:100;background:white;color:#111;padding:12px 18px}.skip:focus{top:12px}
+    .shell{width:calc(100% - 112px);max-width:1488px;margin:auto}.eyebrow{font-size:12px;letter-spacing:.17em;text-transform:uppercase;font-weight:500}.serif{font-family:var(--serif);font-weight:400}.nav{position:absolute;top:0;left:0;width:100%;z-index:5;color:#f6f5ef}.nav-inner{display:flex;align-items:center;justify-content:space-between;height:112px;border-bottom:1px solid #ffffff27}.brand{display:flex;align-items:center;gap:14px}.brand-symbol{font-family:var(--serif);font-size:38px;font-style:italic;line-height:1;letter-spacing:-6px;padding-right:7px}.brand-name{display:flex;flex-direction:column;gap:2px;font-size:12px;letter-spacing:.17em;line-height:1.4}.brand-name span:last-child{font-size:10px;letter-spacing:.23em;opacity:.58}.nav-links{display:flex;align-items:center;gap:34px;font-size:14px}.nav-links a{transition:opacity .2s}.nav-links a:hover{opacity:.6}.nav-listen{display:flex;gap:10px;align-items:center}.tiny-play{width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:6px solid currentColor;display:inline-block}.nav-menu{display:none}
+    .hero{position:relative;min-height:820px;height:min(940px,100svh);color:#f5f4ed;background:#080909;isolation:isolate;overflow:hidden}.hero-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 71%;z-index:-3}.hero:before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,12,10,.36),rgba(9,12,10,.05) 32%,rgba(9,12,10,0) 58%,rgba(9,12,10,.69));z-index:-2}.hero-content{padding-top:166px;position:relative}.hero-kicker{margin:0 0 8px;opacity:.7;font-size:11px;letter-spacing:.21em;text-transform:uppercase}.hero h1{font-family:var(--serif);font-size:clamp(110px,14.5vw,222px);font-weight:400;letter-spacing:-.057em;line-height:1.1;margin:0 0 0 -10px}.hero-subtitle{font-family:var(--serif);font-style:italic;font-size:clamp(24px,2.5vw,37px);font-weight:400;margin:2px 0 0;letter-spacing:-.025em}.hero-bottom{position:absolute;bottom:40px;left:0;right:0;display:flex;align-items:flex-end;justify-content:space-between;gap:20px}.hero-caption{font-size:12px;letter-spacing:.05em;opacity:.8;margin:0}.hero-caption span{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.18em;opacity:.6;margin-bottom:8px}.hero-watch{background:none;border:0;color:inherit;padding:0;display:flex;align-items:center;gap:17px;text-align:left}.play-circle{width:57px;height:57px;border:1px solid #ffffff78;border-radius:50%;display:grid;place-items:center;transition:background .25s,transform .25s}.play-circle .tiny-play{border-top-width:6px;border-bottom-width:6px;border-left-width:9px;margin-left:3px}.hero-watch:hover .play-circle{background:#ffffff22;transform:scale(1.06)}.hero-watch strong{display:block;font-size:14px;font-weight:450}.hero-watch small{display:block;font-size:11px;letter-spacing:.02em;opacity:.58;margin-top:3px}.hero-scroll{display:inline-block;border-bottom:1px solid #ffffff55;padding-bottom:3px;margin-left:28px}
+    .section-topline{display:flex;align-items:center;gap:15px}.section-topline:before{content:'';width:30px;height:1px;background:var(--accent)}.performances{padding:104px 0 102px}.section-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:36px;margin:24px 0 42px}.section-heading h2{font-family:var(--serif);font-weight:400;font-size:clamp(48px,6vw,82px);line-height:1.06;letter-spacing:-.045em;margin:0}.section-heading h2 em{font-weight:400;color:var(--accent)}.section-aside{color:var(--muted);font-size:14px;line-height:1.7;max-width:230px;margin:0 0 6px}.feature-frame{position:relative;overflow:hidden;background:#161717;aspect-ratio:960/544}.feature-frame video{width:100%;height:100%;object-fit:cover;opacity:.84;transition:opacity .4s,transform 1s}.feature-frame:hover video{opacity:1;transform:scale(1.015)}.feature-overlay{position:absolute;inset:0;display:flex;justify-content:center;align-items:center;background:linear-gradient(180deg,transparent 60%,#0009);border:0;color:white;width:100%}.feature-play{height:86px;width:86px;border:1px solid #ffffffbb;border-radius:50%;display:grid;place-items:center;backdrop-filter:blur(5px);background:#1b1c1b25;transition:background .3s,transform .3s}.feature-play .tiny-play{border-top-width:10px;border-bottom-width:10px;border-left-width:14px;margin-left:5px}.feature-overlay:hover .feature-play{background:#ffffff25;transform:scale(1.06)}.feature-label{position:absolute;left:28px;bottom:24px;display:flex;align-items:center;gap:10px;font-size:11px;letter-spacing:.13em;text-transform:uppercase}.sound-icon{display:inline-flex;gap:3px;align-items:center;height:15px}.sound-icon i{display:block;background:currentColor;width:2px;height:7px}.sound-icon i:nth-child(2){height:13px}.sound-icon i:nth-child(3){height:10px}.feature-time{position:absolute;right:28px;bottom:24px;font-size:12px;font-variant-numeric:tabular-nums}.performance-info{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;padding:25px 0 0}.performance-info h3{font-family:var(--serif);font-weight:400;font-size:29px;letter-spacing:-.025em;line-height:1.2;margin:0 0 8px}.performance-info p{font-size:12px;color:var(--muted);margin:0;letter-spacing:.025em}.full-link{border:0;border-bottom:1px solid var(--ink);border-radius:0;padding:3px 0 7px;background:transparent;display:flex;align-items:center;gap:18px;font-size:13px;white-space:nowrap}.full-link:hover{color:var(--accent);border-color:var(--accent)}.full-link span{color:var(--muted);font-size:11px}
+    .gallery{padding:88px 0 110px;background:#e9ece6}.gallery .section-heading{margin-bottom:48px}.gallery-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:64px 42px;align-items:start}.gallery-item{margin:0}.gallery-item:nth-child(2){margin-top:120px}.gallery-open{position:relative;width:100%;display:block;border:0;padding:0;overflow:hidden;background:#161817}.gallery-open img{width:100%;height:100%;object-fit:cover;transition:transform .7s}.gallery-open:hover img{transform:scale(1.035)}.gallery-open:after{content:'+';position:absolute;right:14px;bottom:14px;width:32px;height:32px;border-radius:50%;color:white;background:#15171688;display:grid;place-items:center;font-size:22px;font-weight:300;opacity:0;transform:translateY(6px);transition:.3s}.gallery-open:hover:after,.gallery-open:focus-visible:after{opacity:1;transform:translateY(0)}.gallery-item:first-child .gallery-open{aspect-ratio:5/4}.gallery-item:first-child img{object-position:center 78%}.gallery-item:nth-child(2) .gallery-open{aspect-ratio:4/3}.gallery-item:nth-child(2) img{object-position:center 52%}.gallery-item figcaption{margin-top:15px;display:flex;align-items:baseline;justify-content:space-between;gap:10px;font-size:13px}.gallery-item figcaption span{font-size:10px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}.stills-heading{margin:72px 0 23px;padding-top:23px;border-top:1px solid #c6ccc2;display:flex;align-items:baseline;justify-content:space-between;gap:24px}.stills-heading h3{font-family:var(--serif);font-weight:400;font-size:30px;line-height:1.2;letter-spacing:-.02em;margin:0}.stills-heading p{color:var(--muted);font-size:12px;margin:0}.stills{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.still{margin:0}.still .gallery-open{aspect-ratio:960/544}.still figcaption{margin-top:10px;font-size:10px;letter-spacing:.08em;color:var(--muted);font-variant-numeric:tabular-nums}.still figcaption span{float:right;letter-spacing:0}
+    .closing{background:#202b25;color:#e9ece3;padding:72px 0 65px}.closing-inner{display:flex;align-items:center;justify-content:space-between;gap:40px}.closing h2{font-family:var(--serif);font-weight:400;font-size:clamp(42px,5vw,68px);line-height:1.14;letter-spacing:-.035em;margin:14px 0 0}.closing h2 em{font-weight:400;color:#bdcbb9}.closing .eyebrow{color:#aebbac;font-size:10px}.outline-link{display:inline-flex;align-items:center;justify-content:center;gap:14px;border:1px solid #a6b49f80;border-radius:100px;min-height:52px;padding:13px 26px;background:none;color:inherit;font-size:13px;transition:background .2s}.outline-link:hover{background:#ffffff10}.footer{background:#202b25;color:#a3afa0}.footer-inner{border-top:1px solid #ffffff22;padding:23px 0 26px;display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:11px}.footer-brand{color:#e9ece3;font-size:14px;letter-spacing:.04em}.footer-brand span{font-size:11px;color:#a3afa0;letter-spacing:.02em;margin-left:10px}.back-top{border-bottom:1px solid #a3afa05c;padding-bottom:2px}
+    dialog{border:0;padding:0;background:#111411;color:#f5f5ed;width:min(1100px,calc(100vw - 64px));max-height:calc(100svh - 64px);margin:auto;overflow:auto;box-shadow:0 20px 100px #0009}dialog::backdrop{background:#070b09df;backdrop-filter:blur(9px)}.modal-header{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:20px 25px;border-bottom:1px solid #ffffff22}.modal-title{font-size:14px;font-weight:450;margin:0}.modal-close{display:grid;place-items:center;width:36px;height:36px;border:1px solid #ffffff44;border-radius:50%;background:transparent;color:white;font-size:24px;font-weight:200;line-height:1}.modal-close:hover{background:#ffffff14}.modal-video{width:100%;max-height:64svh;background:#000;aspect-ratio:960/544}.modal-footer{padding:18px 25px;display:flex;justify-content:space-between;gap:16px;align-items:center;font-size:12px;color:#bbc3b7}.modal-footer p{margin:0}.modal-footer a{text-decoration:underline;text-underline-offset:4px;color:#f1f2ea}.media-error{margin:0;padding:16px 25px;background:#50372b;color:white;font-size:14px}.media-error a{text-decoration:underline}.drive-area{aspect-ratio:16/9;background:#050605}.drive-area iframe{width:100%;height:100%;border:0;display:block}.drive-note{padding:18px 25px;font-size:13px;color:#b9c3b5;display:flex;align-items:center;justify-content:space-between;gap:20px}.drive-note p{margin:0;max-width:640px}.drive-note a{color:white;text-decoration:underline;white-space:nowrap;text-underline-offset:4px}.lightbox-image{width:100%;max-height:74svh;object-fit:contain;background:#080a09}.lightbox-controls{display:flex;align-items:center;gap:12px}.lightbox-controls button{border:1px solid #ffffff44;background:transparent;color:white;border-radius:30px;min-height:36px;padding:6px 14px;font-size:12px}.lightbox-controls button:disabled{opacity:.3}.lightbox-count{font-size:11px;min-width:36px;text-align:center;font-variant-numeric:tabular-nums}[hidden]{display:none!important}
+    @media(min-width:1600px){.hero{height:940px}.hero-image{object-position:50% 65%}.hero-content{padding-top:164px}.hero h1{font-size:232px}}
+    @media(max-width:1000px){.shell{width:calc(100% - 64px)}.hero{height:850px;min-height:720px;max-height:100svh}.hero-content{padding-top:174px}.hero h1{font-size:17vw}.hero-image{object-position:57% 78%}.nav-inner{height:94px}.hero-bottom{bottom:32px}.performances{padding:80px 0}.gallery{padding:75px 0 85px}.gallery-grid{gap:28px}.gallery-item:nth-child(2){margin-top:80px}.gallery-item figcaption{align-items:flex-start;flex-direction:column;gap:5px}.stills{grid-template-columns:repeat(2,1fr);gap:25px 18px}.closing{padding:60px 0}.hero-scroll{display:none}}
+    @media(max-width:640px){html{scroll-padding-top:24px}.shell{width:calc(100% - 40px)}.nav-inner{height:83px}.brand-symbol{font-size:32px}.brand-name{font-size:10px;gap:0}.brand-name span:last-child{font-size:9px}.brand{gap:11px}.nav-links{gap:19px;font-size:12px}.nav-listen{display:none}.hero{min-height:650px;max-height:920px;height:92svh}.hero-content{padding-top:132px}.hero-kicker{font-size:9px;margin-bottom:13px}.hero h1{font-size:24vw;letter-spacing:-.055em;margin-left:-5px}.hero-subtitle{font-size:26px;margin-top:6px}.hero-image{object-fit:cover;object-position:61% 100%;opacity:.9}.hero:before{background:linear-gradient(180deg,#080b0959,transparent 42%,#080b090d 70%,#080b09c7)}.hero-bottom{bottom:25px;align-items:flex-end;gap:12px}.hero-caption{font-size:10px;max-width:140px;line-height:1.7}.hero-caption span{font-size:8px;margin-bottom:3px;letter-spacing:.13em}.hero-watch{gap:10px}.play-circle{height:43px;width:43px}.play-circle .tiny-play{border-top-width:5px;border-bottom-width:5px;border-left-width:7px}.hero-watch strong{font-size:11px}.hero-watch small{font-size:9px}.performances{padding:59px 0 64px}.eyebrow{font-size:10px}.section-topline{gap:12px}.section-topline:before{width:23px}.section-heading{display:block;margin:22px 0 28px}.section-heading h2{font-size:50px;line-height:1.05}.section-aside{font-size:12px;margin:20px 0 0;max-width:250px}.feature-frame{margin:0 -20px}.feature-play{width:63px;height:63px}.feature-play .tiny-play{border-top-width:7px;border-bottom-width:7px;border-left-width:11px}.feature-label{left:18px;bottom:15px;font-size:8px}.feature-time{right:18px;bottom:15px;font-size:10px}.performance-info{display:block;padding-top:21px}.performance-info h3{font-size:26px}.performance-info p{font-size:11px}.full-link{margin-top:23px;font-size:12px}.gallery{padding:57px 0 59px}.gallery .section-heading{margin-bottom:29px}.gallery-grid{display:block}.gallery-item:nth-child(2){margin-top:33px}.gallery-item:first-child .gallery-open{aspect-ratio:5/4}.gallery-item figcaption{flex-direction:row;font-size:12px;margin-top:11px}.gallery-item figcaption span{font-size:8px}.stills-heading{margin-top:41px;display:block;padding-top:21px}.stills-heading h3{font-size:26px}.stills-heading p{font-size:11px;margin-top:9px}.stills{gap:20px 12px}.still figcaption{font-size:8px}.closing{padding:46px 0}.closing-inner{display:block}.closing h2{font-size:45px}.outline-link{margin-top:27px;min-height:48px;padding:12px 22px;font-size:12px}.footer-inner{font-size:9px;flex-wrap:wrap;padding:20px 0;gap:15px}.footer-brand{font-size:13px}.footer-brand span{font-size:10px}.footer-credit{order:3;width:100%;font-size:9px}.back-top{margin-left:auto}dialog{width:calc(100vw - 24px);max-height:calc(100svh - 40px)}.modal-header{padding:14px 16px}.modal-title{font-size:12px}.modal-footer{padding:16px;display:block;font-size:11px}.modal-footer a{display:inline-block;margin-top:10px}.drive-note{padding:16px;display:block;font-size:12px}.drive-note a{display:inline-block;margin-top:12px}.lightbox-controls{margin-top:14px;justify-content:space-between}.modal-video{max-height:60svh}}
+    .gallery-grid{grid-template-columns:.85fr 1.15fr;gap:42px}
+    .gallery-item:first-child .gallery-open{aspect-ratio:4/5}
+    .gallery-item:nth-child(2) .gallery-open{aspect-ratio:3/2}
+    .session-crop{position:relative;overflow:hidden;aspect-ratio:4/5}
+    .session-crop img{position:absolute;width:124%;height:auto;max-height:none;left:-6.2%;top:-53.4%;object-fit:initial}
+    #lightbox-stage.session-crop{width:min(100%,59.2svh);margin:auto}
+    .gallery-finale{margin:60px 0 0}
+    .gallery-finale .gallery-open{aspect-ratio:2.15/1}
+    .gallery-finale img{object-position:50% 58%}
+    .gallery-finale figcaption{margin-top:15px;display:flex;justify-content:space-between;gap:16px;font-size:14px}
+    .gallery-finale figcaption span{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+    .preview-toggle{position:absolute;right:18px;top:18px;z-index:1;background:#111a;backdrop-filter:blur(8px);color:#fff;border:1px solid #fff6;border-radius:30px;padding:8px 14px;min-height:38px;font-size:12px}
+    .preview-toggle:hover{background:#111d}
+    .nav-links,.full-link,.outline-link{font-size:14px}
+    .hero-kicker,.hero-caption span,.hero-watch small,.feature-label,.feature-time,.gallery-item figcaption span,.still figcaption,.closing .eyebrow,.footer-inner,.footer-credit,.lightbox-count{font-size:12px}
+    .hero-watch strong,.performance-info p,.gallery-item figcaption{font-size:14px}
+    .section-aside{font-size:16px;max-width:260px}.full-link span{font-size:12px}
+    @media(max-width:640px){
+      .hero-image{object-position:92% 100%}
+      .gallery-grid{display:block}
+      .gallery-item:first-child .gallery-open{aspect-ratio:4/5}
+      .gallery-item:nth-child(2) .gallery-open{aspect-ratio:3/2}
+      .gallery-finale{margin-top:33px}
+      .gallery-finale .gallery-open{aspect-ratio:3/2}
+      .gallery-finale figcaption{margin-top:11px;flex-wrap:wrap}
+
+      .hero-bottom{justify-content:flex-end}.hero-caption{display:none}
+      .hero-kicker,.eyebrow,.feature-label,.feature-time,.gallery-item figcaption span,.still figcaption,.stills-heading p,.closing .eyebrow,.footer-inner,.footer-credit,.footer-brand span{font-size:12px}
+      .hero-watch strong,.nav-links,.full-link,.outline-link,.performance-info p,.gallery-item figcaption{font-size:14px}
+      .hero-watch small,.full-link span{font-size:12px}
+      .section-aside{font-size:14px}.gallery-item figcaption{flex-wrap:wrap}
+      .still figcaption{letter-spacing:.025em}.still figcaption span{font-size:12px}
+      .preview-toggle{top:12px;right:12px;min-height:36px;padding:6px 12px}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.feature-frame:hover video,.gallery-open:hover img{transform:none}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="nav">
+    <div class="nav-inner shell">
+      <a class="brand" href="#top" aria-label="ZhouMo Cello, home"><span class="brand-symbol" aria-hidden="true">zm</span><span class="brand-name"><span>ZHOUMO</span><span>CELLO</span></span></a>
+      <nav class="nav-links" aria-label="Main navigation"><a href="#performances">Performances</a><a href="#gallery">Gallery</a><a class="nav-listen" href="#performances"><span class="tiny-play" aria-hidden="true"></span> Listen</a></nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <img class="hero-image" src="assets/quartet.jpg" width="1707" height="1280" alt="A string quartet performing together against a dark stage curtain." fetchpriority="high">
+      <div class="hero-content shell"><p class="hero-kicker">Cello &amp; chamber music</p><h1 id="hero-title">ZhouMo</h1><p class="hero-subtitle">Cello, in conversation.</p></div>
+      <div class="hero-bottom shell"><p class="hero-caption"><span>A personal music portfolio</span>On stage. In the moment.<a class="hero-scroll" href="#performances">Explore the performances</a></p><button class="hero-watch" type="button" data-open-excerpt><span class="play-circle"><span class="tiny-play" aria-hidden="true"></span></span><span><strong>Watch the performance</strong><small>Selected excerpt &nbsp; / &nbsp; 01:15</small></span></button></div>
+    </section>
+    <section class="performances shell" id="performances" aria-labelledby="performance-heading">
+      <div class="section-topline eyebrow">Selected performance</div>
+      <div class="section-heading"><h2 id="performance-heading">In the <em>moment.</em></h2><p class="section-aside">Four instruments. A shared pulse.<br>A moment of chamber music, live.</p></div>
+      <div class="feature-frame"><video id="ambient-video" muted loop playsinline preload="none" poster="assets/performance-poster.jpg" aria-hidden="true" tabindex="-1"><source data-src="assets/hero-loop.mp4" type="video/mp4"></video><button class="feature-overlay" type="button" data-open-excerpt aria-label="Play a 75-second excerpt of the live chamber performance"><span class="feature-play"><span class="tiny-play" aria-hidden="true"></span></span><span class="feature-label"><span class="sound-icon" aria-hidden="true"><i></i><i></i><i></i></span> Live performance</span><span class="feature-time">01:15 excerpt</span></button><button class="preview-toggle" id="preview-toggle" type="button" aria-label="Play silent preview">Play preview</button></div>
+      <div class="performance-info"><div><h3>In ensemble</h3><p>String quartet &nbsp;·&nbsp; Live recording &nbsp;·&nbsp; Cello</p></div><button class="full-link" type="button" data-open-full>Watch the full performance <span>10:31</span></button></div>
+    </section>
+    <section class="gallery" id="gallery" aria-labelledby="gallery-heading"><div class="shell">
+      <div class="section-topline eyebrow">On stage &amp; beyond</div><div class="section-heading"><h2 id="gallery-heading">The art of <em>listening.</em></h2><p class="section-aside">From the concert stage<br>to the spaces in between.</p></div>
+      <div class="gallery-grid">
+        <figure class="gallery-item"><button class="gallery-open session-crop" type="button" data-gallery="0" aria-label="Enlarge the cello close-up photograph"><img src="assets/cello-session.jpg" alt="A close-up of a cellist playing in an informal ensemble setting." width="1280" height="2781" loading="lazy"></button><figcaption>Cello, up close<span>In the ensemble</span></figcaption></figure>
+        <figure class="gallery-item"><button class="gallery-open" type="button" data-gallery="1" aria-label="Enlarge the voice and strings photograph"><img src="assets/voice-strings.jpg" alt="A vocalist and conductor with a string ensemble under violet concert lighting." width="1920" height="1280" loading="lazy"></button><figcaption>A shared stage<span>Voice &amp; strings</span></figcaption></figure>
+      </div>
+      <figure class="gallery-finale"><button class="gallery-open" type="button" data-gallery="2" aria-label="Enlarge the curtain call photograph"><img src="assets/curtain-call.jpg" alt="The string ensemble and conductor standing together as the audience applauds." width="1920" height="1280" loading="lazy"></button><figcaption>After the last note<span>Curtain call</span></figcaption></figure>
+    </div></section>
+    <section class="closing" aria-labelledby="closing-heading"><div class="shell closing-inner"><div><span class="eyebrow">ZhouMo · Cello</span><h2 id="closing-heading">Let the music <em>speak.</em></h2></div><button class="outline-link" type="button" data-open-full><span class="tiny-play" aria-hidden="true"></span> Listen to the full performance</button></div></section>
+  </main>
+  <footer class="footer"><div class="footer-inner shell"><a class="footer-brand" href="#top">ZhouMo<span>Cello</span></a><span class="footer-credit">Live music. Shared moments.</span><a class="back-top" href="#top">Back to top</a></div></footer>
+  <dialog id="excerpt-modal" aria-labelledby="excerpt-title"><div class="modal-header"><h2 class="modal-title" id="excerpt-title">ZhouMo · In ensemble</h2><button class="modal-close" type="button" data-close aria-label="Close performance player">×</button></div><video class="modal-video" id="performance-video" controls playsinline preload="none" poster="assets/performance-poster.jpg" aria-label="String quartet live performance, 75-second excerpt"><source data-src="assets/excerpt.mp4" type="video/mp4"></video><p class="media-error" id="media-error" role="status" hidden>The video could not be loaded. <a href="https://drive.google.com/file/d/1SNV6oNJskdxrOYUmpqKmk10OKzdtOEuN/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">Watch the original recording on Google Drive.</a></p><div class="modal-footer"><p>Selected excerpt · 03:00–04:15 of the original recording</p><a href="https://drive.google.com/file/d/1SNV6oNJskdxrOYUmpqKmk10OKzdtOEuN/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">Full recording on Google Drive</a></div></dialog>
+  <dialog id="full-modal" aria-labelledby="full-title"><div class="modal-header"><h2 class="modal-title" id="full-title">The full performance · 10:31</h2><button class="modal-close" type="button" data-close aria-label="Close full performance">×</button></div><div class="drive-area" id="drive-area"></div><div class="drive-note"><p>The full recording is hosted on Google Drive. If the player is unavailable, open the original recording.</p><a href="https://drive.google.com/file/d/1SNV6oNJskdxrOYUmpqKmk10OKzdtOEuN/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">Open original recording</a></div></dialog>
+  <dialog id="gallery-modal" aria-labelledby="gallery-title"><div class="modal-header"><h2 class="modal-title" id="gallery-title">On stage</h2><button class="modal-close" type="button" data-close aria-label="Close photograph">×</button></div><div id="lightbox-stage"><img class="lightbox-image" id="lightbox-image" src="assets/cello-session.jpg" alt=""></div><div class="modal-footer"><p id="lightbox-caption"></p><div class="lightbox-controls"><button type="button" id="gallery-prev" aria-label="Previous photograph">Previous</button><span class="lightbox-count" id="lightbox-count"></span><button type="button" id="gallery-next" aria-label="Next photograph">Next</button></div></div></dialog>
+  <script>
+    (() => {
+      'use strict';
+      const $ = (selector) => document.querySelector(selector);
+      const excerptModal = $('#excerpt-modal');
+      const fullModal = $('#full-modal');
+      const galleryModal = $('#gallery-modal');
+      const performanceVideo = $('#performance-video');
+      const ambient = $('#ambient-video');
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      let lastTrigger = null;
+      let galleryIndex = 0;
+      let ambientVisible = false;
+      let ambientPausedByUser = false;
+      let ambientManual = false;
+      const gallery = [
+        ['assets/cello-session.jpg', 'Cello, up close · In the ensemble', 'A close-up of a cellist playing in an informal ensemble setting.', true],
+        ['assets/voice-strings.jpg', 'A shared stage · Voice & strings', 'A vocalist, conductor, and string ensemble under violet lighting.', false],
+        ['assets/curtain-call.jpg', 'After the last note · Curtain call', 'The string ensemble and conductor standing as the audience applauds.', false]
+      ];
+      function loadVideo(video) {
+        const source = video.querySelector('source');
+        if (!source.hasAttribute('src')) { source.src = source.dataset.src; video.load(); }
+      }
+      function syncAmbient() {
+        const allowed = ambientVisible && !ambientPausedByUser && !document.hidden && !document.querySelector('dialog[open]') && (ambientManual || (!reducedMotion.matches && !navigator.connection?.saveData));
+        if (allowed) { loadVideo(ambient); ambient.play().catch(() => {}); } else { ambient.pause(); }
+      }
+      $('#preview-toggle').addEventListener('click', () => {
+        ambientPausedByUser = !ambient.paused;
+        ambientManual = true;
+        syncAmbient();
+      });
+      function updatePreviewButton() {
+        $('#preview-toggle').textContent = ambient.paused ? 'Play preview' : 'Pause preview';
+        $('#preview-toggle').setAttribute('aria-label', ambient.paused ? 'Play silent preview' : 'Pause silent preview');
+      }
+      ambient.addEventListener('play', updatePreviewButton);
+      ambient.addEventListener('pause', updatePreviewButton);
+      function openModal(modal, trigger) {
+        lastTrigger = trigger;
+        modal.showModal();
+        document.body.classList.add('locked');
+        syncAmbient();
+      }
+      document.querySelectorAll('[data-open-excerpt]').forEach(button => button.addEventListener('click', () => {
+        openModal(excerptModal, button);
+        loadVideo(performanceVideo);
+        performanceVideo.play().catch(() => {});
+      }));
+      performanceVideo.addEventListener('error', () => { $('#media-error').hidden = false; });
+      performanceVideo.querySelector('source').addEventListener('error', () => { $('#media-error').hidden = false; });
+      document.querySelectorAll('[data-open-full]').forEach(button => button.addEventListener('click', () => {
+        const iframe = document.createElement('iframe');
+        iframe.src = 'https://drive.google.com/file/d/1SNV6oNJskdxrOYUmpqKmk10OKzdtOEuN/preview';
+        iframe.title = 'Full live performance on Google Drive';
+        iframe.allow = 'autoplay; fullscreen';
+        iframe.allowFullscreen = true;
+        iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+        $('#drive-area').replaceChildren(iframe);
+        openModal(fullModal, button);
+      }));
+      function updateGallery(index) {
+        galleryIndex = Math.max(0, Math.min(gallery.length - 1, index));
+        const [src, caption, alt, crop] = gallery[galleryIndex];
+        $('#lightbox-stage').classList.toggle('session-crop', crop);
+        $('#lightbox-image').src = src;
+        $('#lightbox-image').alt = alt;
+        $('#lightbox-caption').textContent = caption;
+        $('#gallery-title').textContent = caption;
+        $('#lightbox-count').textContent = `${galleryIndex + 1} / ${gallery.length}`;
+        $('#gallery-prev').disabled = galleryIndex === 0;
+        $('#gallery-next').disabled = galleryIndex === gallery.length - 1;
+      }
+      document.querySelectorAll('[data-gallery]').forEach(button => button.addEventListener('click', () => {
+        updateGallery(Number(button.dataset.gallery)); openModal(galleryModal, button);
+      }));
+      $('#gallery-prev').addEventListener('click', () => updateGallery(galleryIndex - 1));
+      $('#gallery-next').addEventListener('click', () => updateGallery(galleryIndex + 1));
+      galleryModal.addEventListener('keydown', event => {
+        if (event.key === 'ArrowLeft') { event.preventDefault(); updateGallery(galleryIndex - 1); }
+        if (event.key === 'ArrowRight') { event.preventDefault(); updateGallery(galleryIndex + 1); }
+      });
+      document.querySelectorAll('dialog').forEach(modal => {
+        modal.querySelector('[data-close]').addEventListener('click', () => modal.close());
+        modal.addEventListener('click', event => {
+          if (event.target !== modal) return;
+          const rect = modal.getBoundingClientRect();
+          if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) modal.close();
+        });
+        modal.addEventListener('close', () => {
+          if (modal === excerptModal) performanceVideo.pause();
+          if (modal === fullModal) $('#drive-area').replaceChildren();
+          document.body.classList.remove('locked');
+          syncAmbient();
+          lastTrigger?.focus({preventScroll: true});
+        });
+      });
+      if ('IntersectionObserver' in window) {
+        new IntersectionObserver(entries => { ambientVisible = entries[0].isIntersecting; syncAmbient(); }, {threshold: .2}).observe(ambient);
+      }
+      document.addEventListener('visibilitychange', syncAmbient);
+      reducedMotion.addEventListener('change', () => { ambientManual = false; syncAmbient(); });
+    })();
+  </script>
+</body>
+</html>
